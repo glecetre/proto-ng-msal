@@ -1,0 +1,18 @@
+<div
+  *ngIf="user"
+  class="h-full flex flex-col gap-8 justify-center items-stretch"
+>
+  <img
+    [src]="pictureUrl"
+    width="250"
+    height="250"
+    class="self-center bg-slate-100 border border-transparent shadow rounded-full"
+  />
+  <div class="text-center">
+    <app-card-title>{{ user.name }}</app-card-title>
+    <p class="text-slate-500">{{ user.username }}</p>
+  </div>
+  <div>
+    <app-button-link [path]="['/']">Go to home page</app-button-link>
+  </div>
+</div>

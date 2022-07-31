@@ -1,0 +1,11 @@
+<app-card-content>
+  <app-card-title>Welcome</app-card-title>
+  <app-card-body>
+    <p class="mb-8">Choose where you want to navigate:</p>
+    <ul>
+      <li *ngFor="let link of navLinks" class="mb-4 last:mb-0">
+        <app-button-link [path]="link.path">{{ link.text }}</app-button-link>
+      </li>
+    </ul>
+  </app-card-body>
+</app-card-content>
